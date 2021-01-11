@@ -1,0 +1,254 @@
+.page {
+ width: 100%;
+ height: auto;
+}
+
+.page__container {
+  width: 100%;
+  display: grid;
+  height: 100vh;
+  max-height: 100vh;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 50px 1fr 1fr 40px;
+  justify-items: center;
+  align-items: center;
+  text-align: center;
+  overflow: hidden;
+}
+
+.nav-bar__container {
+  grid-area: 1/9/2/13;
+  height: 40px;
+  justify-self: end;
+  
+  text-align: center;
+  padding: 10px 0 0;
+  padding-right: 40px;
+}
+
+.nav-bar-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  min-width: 181px;
+  height: 30px;
+}
+
+.nav-bar-list__item {
+  align-items: center;
+  display: inline;
+  float: left;
+  font-family: Arial, sans-serif;
+  font-size: 13px;
+}
+
+.nav-bar-list__item a {
+  display: inline-block;
+  color: rgba(0,0,0,0.87);
+  text-align: center;
+  padding: 10px 11px;
+  text-decoration: none;
+}
+
+.nav-bar-list__item__app {
+  width: 30px;
+  height: 30px;
+  position: relative;
+}
+
+.nav-bar-list__item__app svg {
+  width: 17px;
+  height: 17px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  fill: #707070;
+}
+
+.nav-bar-list__item--profile {
+  width: 30px;
+  height: 30px;
+}
+
+.profile-logo {
+  background-size: 32px 32px;
+  border: 0;
+  border-radius: 50%;
+  margin: -1px;
+  position: relative;
+  display: block;
+  width: 32px;
+  height: 32px;
+  z-index: 0;
+  }
+
+.main__container {
+  grid-area: 2/4/4/10;
+  justify-self: center;
+  align-self: center;
+  width: 584px;
+  height: 363px;
+  padding-top: 14px;
+}
+
+
+.main__search-form {
+  width: 583px;
+  height: 140px;
+}
+
+.main__search-form--form {
+  background: #fff;
+  display: flex;
+  border: 1px solid #dfe1e5;
+  box-shadow: none;
+  border-radius: 24px;
+  z-index: 3;
+  height: 46px;
+  margin: 24px auto 0;
+  width: 482px;
+  width: auto;
+}
+
+.search-form__container {
+  padding: 5px 8px 0 14px;
+  vertical-align: middle;
+  width: 581px;
+  height: 44px;
+  display: flex;
+
+}
+
+.lens__container {
+
+  width: 20px;
+  height: 26px;
+  margin: 4px 0 9px;
+  display: inline-block;
+  fill: currentColor;
+  line-height: 24px;
+  position: relative;
+  margin-right: 13px;
+}
+
+.lens__container svg {
+  display: block;
+  height: 100%;
+  width: 100%;  
+  color: #9aa0a6;
+}
+
+.input-container {
+  width: 486px;
+  height: 34px;
+}
+
+.search-input {
+  font: 16px arial,sans-serif;
+  line-height: 34px;
+  background-color: transparent;
+  border: none;
+  margin: 0;
+  padding: 0;
+  color: rgba(0,0,0,.87);
+  outline: none;
+  display: flex;
+  flex: 100%;
+  -webkit-tap-highlight-color: transparent;
+  height: 34px;
+  width: 486px;
+}
+
+.micro__container {
+  display: flex;
+  flex: 0 0 auto;
+  margin-top: -5px;
+  align-items: stretch;
+  flex-direction: row;
+  width: 40px;
+}
+
+.micro__container--2 {
+  flex: 1 0 auto;
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  border: 0;
+  background: transparent;
+  outline: none;
+  padding: 0 8px;
+  width: 24px;
+  line-height: 44px;
+}
+
+.micro__container--2 svg {
+  height: 24px;
+  width: 24px;
+  vertical-align: middle;
+}
+
+.main__search-form--buttons {
+  height: 70px;
+  padding-top: 18px;
+  top: 53px;
+  z-index: 0;
+}
+
+.search-button {
+  background-image: -webkit-linear-gradient(top,#f8f9fa,#f8f9fa);
+  background-color: #f8f9fa;
+  border: 1px solid #f8f9fa;
+  border-radius: 4px;
+  color: #3c4043;
+  font-family: arial,sans-serif;
+  font-size: 14px;
+  margin: 11px 4px;
+  padding: 0 16px;
+  line-height: 27px;
+  height: 36px;
+  min-width: 54px;
+  text-align: center;
+  cursor: pointer;
+  user-select: none;
+}
+
+
+
+
+.footer__container {
+  grid-area: 4/1/5/13;
+  width: 100%;
+  height: 42px;
+  background-color: rgb(242, 242, 242);
+  color: #70757a;
+  border: 1px 0 1px solid #dadce0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-list:first-child {
+  margin-left: 3px;
+}
+
+.foo__item {
+  align-items: center;
+  display: inline;
+  float: left;
+  padding-left: 27px;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+}
+.footer-left {
+  
+}
+.footer-right {
+  margin-right: 30px;
+}
